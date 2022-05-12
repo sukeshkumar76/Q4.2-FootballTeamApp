@@ -1,0 +1,21 @@
+
+<div class="container">
+    <form #addplayer="ngForm" (ngSubmit)="handleSubmit(addplayer.value)" class="form">
+        <input type="text" ngModel name="id" placeholder="Enter Id"/>
+        <input type="text" ngModel name="firstname" placeholder="Enter First Name"/>
+        <input type="text" ngModel name="lastname" placeholder="Enter Last Name"/>
+        <input type="date" ngModel name="dob" placeholder="Date of birth"/>
+        <input type="text" ngModel name="position" placeholder="position"/>
+        <input type="text" ngModel  name="salary" placeholder="Salary"/>
+        <input type="file" ngModel name="image" placeholder="Image"/>
+        <input type="text" ngModel  name="rushingyards" placeholder="rushing yards"/>
+        <input type="text" ngModel  name="touchdowns" placeholder="touchdowns"/>
+        <input type="text" ngModel  name="sacks" placeholder="sacks"/>
+        <input type="text" ngModel  name="madeGoals" placeholder="madeGoals"/>
+        <input type="text" ngModel  name="missedGoals" placeholder="missedGoals"/>
+        <input type="text" ngModel  name="catches" placeholder="catches"/>
+        <div class="form-group">
+            <input type="submit" value="Update"/>
+        </div>
+    </form>
+</div>
